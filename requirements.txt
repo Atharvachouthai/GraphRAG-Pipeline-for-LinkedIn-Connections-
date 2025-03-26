@@ -1,0 +1,11 @@
+neo4j
+chromadb
+langchain
+sentence-transformers
+openai
+tqdm
+pandas
+networkx
+groq
+llama-index
+python-dotenv

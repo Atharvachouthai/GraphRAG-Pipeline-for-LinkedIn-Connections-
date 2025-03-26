@@ -1,0 +1,13 @@
+.env
+__pycache__/
+*.pyc
+*.log
+*.sqlite3
+*.db
+.env.*
+*.DS_Store
+graph_builder.py 
+groq_integration_helper.py
+neo4j_test.py
+rapidapi.py
+vectorstore.py
