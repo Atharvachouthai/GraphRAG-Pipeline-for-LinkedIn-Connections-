@@ -1,4 +1,4 @@
-from neo4j import GraphDatabase
+from neo4j_test import GraphDatabase
 from dotenv import load_dotenv
 import os
 import chromadb
