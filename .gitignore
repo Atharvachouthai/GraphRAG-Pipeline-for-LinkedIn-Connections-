@@ -11,3 +11,4 @@ groq_integration_helper.py
 neo4j_test.py
 rapidapi.py
 vectorstore.py
+data/
