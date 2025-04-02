@@ -54,6 +54,27 @@
 # if __name__ == "__main__":
 #     main()
 
+# import sys
+# import types
+
+# # Workaround for torch.classes RuntimeError in Streamlit
+# if not isinstance(getattr(__import__('torch'), 'classes', None), types.ModuleType):
+#     import types
+#     import torch
+#     torch.classes = types.SimpleNamespace()
+
+import sys
+import types
+
+# 🩹 Patch torch.classes to avoid Streamlit crashing
+try:
+    import torch
+    if not isinstance(getattr(torch, 'classes', None), types.ModuleType):
+        torch.classes = types.SimpleNamespace()
+except Exception:
+    pass
+
+
 from utils.graphqueries import (
     parse_query_with_groq,
     get_people_from_graph,
