@@ -17,3 +17,4 @@ jsearch_api.py
 adzuna_search.py
 config.py
 groq_integration.py
+graphqueries.py
